@@ -1,0 +1,21 @@
+package exercise;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class LoopMain {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        String[] comida = new String[5];
+
+        for (int i = 0; i < comida.length; i++){
+
+            System.out.println("Por favor, elige tu comida, tendras que elegir 6 platos, plato numero " + (i+1));
+            comida[i] = input.nextLine();
+        }
+
+        System.out.println(Arrays.toString(comida));
+    }
+}
